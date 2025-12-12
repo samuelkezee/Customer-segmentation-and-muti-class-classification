@@ -1,7 +1,23 @@
 [project]
-name = "myapp"
+name = "customer-segmentation"
 version = "0.1.0"
-description = "Add your description here"
+description = "A customer segmentation ML project"
+authors = [
+    {name = "Samuel K C", email = "samuelsam2k27@gmail.com"},
+]
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "pandas",
+    "scikit-learn",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+    "missingno",
+    "yellowbrick",
+    "plotly",
+]
+
+[project.scripts]
+customer_segmentation = "customer_segmentation.main:main"
